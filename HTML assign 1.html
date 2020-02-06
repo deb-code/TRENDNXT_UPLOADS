@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+<title><title>Assignment 1</title></title>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+th, td {
+  padding: 15px;
+}
+</style>
+
+
+</head>
+<body>
+<h1 style ="color:green;font-family:Times New Roman;text-align:center;"><b>STOCK TRADING APPLICATION</b></h1>
+
+
+
+<table align="center">
+<tr>
+<th><b>TICKER</b></th>
+<th><b>PRICE</b></th>
+</tr>
+
+<tr>
+<td>WIPRO Ltd</td>
+<td>242.45</td>
+</tr>
+
+
+<tr>
+<td>Infosys Ltd</td>
+<td>774.60</td>
+</tr>
+
+
+<tr>
+<td>TCS Ltd</td>
+<td>2,138.45</td>
+</tr>
+
+</table>
+
+<h1 style ="color:red;font-family:Times New Roman;text-align:center;">STOCK TRADING</h1>
+        <form>
+            <table align="center">
+                <tr>
+                    <td>Ticker:</td>
+                    <td><input type="text" name="tickersymbol" list="tickers" required></td>
+                </tr>
+                <tr>
+                    <td>Quantity:</td>
+                    <td><input type="number" name="quantity" min="10" max="100" pattern="[0-9]" step="10" required></td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="submit"></td>
+                </tr>
+            </table>
+
+            <datalist id="tickers">
+                <option value="WIPRO Ltd">
+                <option value="Infosys">
+                <option value="TCS">
+               </datalist>
+        </form>
+
+   
+
+
+
+</body>
+</html>
